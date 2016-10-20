@@ -3,3 +3,8 @@ resource "null_resource" "example" {
     command = "echo example"
   }
 }
+resource "null_resource" "example2" {
+  provisioner "local-exec" {
+    command = "echo example"
+  }
+}
